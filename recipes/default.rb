@@ -69,7 +69,7 @@ else
 end
 
 case node[:lsb][:codename]
-when "karmic"
+when "karmic" || "precise"
   template "/etc/default/memcached" do
     source "memcached.default.erb"
     owner "root"
